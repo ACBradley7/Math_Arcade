@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 160 160"
+     preserveAspectRatio="xMidYMid meet"
+     style="width: 100%; height: 100%; max-width: 100vw; max-height: 100vh; display: block;">
+  <defs>
+    <linearGradient id="iconBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2A55" />
+      <stop offset="100%" stop-color="#A084DC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Centered Plus/Minus Icon -->
+  <g>
+    <circle cx="80" cy="80" r="70" fill="url(#iconBg1)" stroke="#7DE2D1" stroke-width="3" />
+    <line x1="50" y1="80" x2="110" y2="80" stroke="#FF5DA2" stroke-width="10" stroke-linecap="round" />
+    <line x1="80" y1="50" x2="80" y2="110" stroke="#FF5DA2" stroke-width="10" stroke-linecap="round" />
+  </g>
+</svg>

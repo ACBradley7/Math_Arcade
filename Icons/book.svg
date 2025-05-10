@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 160 160"
+     preserveAspectRatio="xMidYMid meet"
+     style="width: 100%; height: 100%; max-width: 100vw; max-height: 100vh; display: block;">
+ <defs>
+    <linearGradient id="iconBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2A55" />
+      <stop offset="100%" stop-color="#A084DC" />
+    </linearGradient>
+    
+    <linearGradient id="pageFill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F1F1F1" />
+      <stop offset="100%" stop-color="#e5e5e5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="80" cy="80" r="70" fill="url(#iconBg1)" stroke="#7DE2D1" stroke-width="3" />
+  
+  <!-- Book Right Page -->
+  <path d="M80,50 L125,45 L125,115 L80,120 Z" fill="url(#pageFill)" stroke="#2D2A55" stroke-width="1" />
+  
+  <!-- Book Left Page -->
+  <path d="M35,45 L80,50 L80,120 L35,115 Z" fill="url(#pageFill)" stroke="#2D2A55" stroke-width="1" />
+  
+  <!-- Book Center Fold -->
+  <path d="M80,50 L80,120" fill="none" stroke="#2D2A55" stroke-width="1.5" />
+  
+  <!-- Book Cover Left -->
+  <path d="M30,45 L35,45 L35,115 L30,115 C25,115 20,110 20,105 L20,55 C20,50 25,45 30,45 Z" fill="#FF5DA2" stroke="#2D2A55" stroke-width="1" />
+  
+  <!-- Book Cover Right -->
+  <path d="M125,45 L130,45 C135,45 140,50 140,55 L140,105 C140,110 135,115 130,115 L125,115 Z" fill="#FF5DA2" stroke="#2D2A55" stroke-width="1" />
+  
+  <!-- Page Lines -->
+  <g stroke="#A084DC" stroke-width="0.5" opacity="0.7">
+    <line x1="45" y1="70" x2="75" y2="70" />
+    <line x1="45" y1="80" x2="75" y2="80" />
+    <line x1="45" y1="90" x2="75" y2="90" />
+    <line x1="45" y1="100" x2="75" y2="100" />
+    
+    <line x1="85" y1="70" x2="115" y2="70" />
+    <line x1="85" y1="80" x2="115" y2="80" />
+    <line x1="85" y1="90" x2="115" y2="90" />
+    <line x1="85" y1="100" x2="115" y2="100" />
+  </g>
+</svg>

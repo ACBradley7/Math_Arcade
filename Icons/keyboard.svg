@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 160 160"
+     preserveAspectRatio="xMidYMid meet"
+     style="width: 100%; height: 100%; max-width: 100vw; max-height: 100vh; display: block;">
+ <defs>
+    <linearGradient id="iconBg2" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#2D2A55" />
+      <stop offset="100%" stop-color="#A084DC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="80" cy="80" r="70" fill="url(#iconBg2)" stroke="#7DE2D1" stroke-width="3" />
+  
+  <!-- Keyboard Base -->
+  <rect x="35" y="60" width="95" height="50" rx="5" fill="#2D2A55" stroke="#F1F1F1" stroke-width="2" />
+  
+  <!-- Keys - Row 1 -->
+  <g fill="#63D2FF">
+    <rect x="40" y="65" width="10" height="10" rx="2" />
+    <rect x="55" y="65" width="10" height="10" rx="2" />
+    <rect x="70" y="65" width="10" height="10" rx="2" />
+    <rect x="85" y="65" width="10" height="10" rx="2" />
+    <rect x="100" y="65" width="10" height="10" rx="2" />
+    <rect x="115" y="65" width="10" height="10" rx="2" />
+  </g>
+  
+  <!-- Keys - Row 2 -->
+  <g fill="#F1F1F1">
+    <rect x="40" y="80" width="10" height="10" rx="2" />
+    <rect x="55" y="80" width="10" height="10" rx="2" />
+    <rect x="70" y="80" width="10" height="10" rx="2" />
+    <rect x="85" y="80" width="10" height="10" rx="2" />
+    <rect x="100" y="80" width="10" height="10" rx="2" />
+    <rect x="115" y="80" width="10" height="10" rx="2" />
+  </g>
+  
+  <!-- Keys - Row 3 -->
+  <g fill="#FF5DA2">
+    <rect x="40" y="95" width="10" height="10" rx="2" />
+    <rect x="55" y="95" width="10" height="10" rx="2" />
+    <rect x="70" y="95" width="25" height="10" rx="2" />
+    <rect x="100" y="95" width="10" height="10" rx="2" />
+    <rect x="115" y="95" width="10" height="10" rx="2" />
+  </g>
+</svg>
