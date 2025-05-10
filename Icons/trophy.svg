@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 160 160"
+     preserveAspectRatio="xMidYMid meet"
+     style="width: 100%; height: 100%; max-width: 100vw; max-height: 100vh; display: block;">
+<defs>
+    <linearGradient id="iconBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2A55" />
+      <stop offset="100%" stop-color="#A084DC" />
+    </linearGradient>
+    <linearGradient id="trophyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="50%" stop-color="#FFEC8B" />
+      <stop offset="100%" stop-color="#FFAB00" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="80" cy="80" r="70" fill="url(#iconBg1)" stroke="#7DE2D1" stroke-width="3" />
+  
+  <!-- Trophy Base -->
+  <path d="M60,115 L100,115 L95,125 L65,125 Z" fill="url(#trophyGold)" stroke="#2D2A55" stroke-width="1.5" />
+  
+  <!-- Trophy Stem -->
+  <rect x="75" y="90" width="10" height="25" fill="url(#trophyGold)" stroke="#2D2A55" stroke-width="1" />
+  
+  <!-- Trophy Cup -->
+  <path d="M50,40 L110,40 L110,60 C110,75 100,85 85,90 L75,90 C60,85 50,75 50,60 L50,40 Z" fill="url(#trophyGold)" stroke="#2D2A55" stroke-width="1.5" />
+  
+  <!-- Trophy Handles -->
+  <path d="M50,45 C35,45 35,55 35,60 C35,65 40,70 50,70" fill="none" stroke="#FFD700" stroke-width="4" />
+  <path d="M110,45 C125,45 125,55 125,60 C125,65 120,70 110,70" fill="none" stroke="#FFD700" stroke-width="4" />
+  
+  <!-- Trophy Highlights -->
+  <path d="M55,50 L55,60 C55,70 65,80 80,83" fill="none" stroke="#FFEC8B" stroke-width="1" opacity="0.7" />
+  <path d="M105,50 L105,60 C105,70 95,80 80,83" fill="none" stroke="#FFAB00" stroke-width="1" opacity="0.7" />
+  
+  <!-- Trophy Star -->
+  <path d="M80,50 L83,56 L90,57 L85,62 L86,69 L80,66 L74,69 L75,62 L70,57 L77,56 Z" fill="#FF5DA2" stroke="#2D2A55" stroke-width="0.5" />
+  
+</svg>

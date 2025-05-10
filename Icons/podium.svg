@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 160 160"
+     preserveAspectRatio="xMidYMid meet"
+     style="width: 100%; height: 100%; max-width: 100vw; max-height: 100vh; display: block;">
+    <defs>
+    <linearGradient id="iconBg1" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#2D2A55" />
+      <stop offset="100%" stop-color="#A084DC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="80" cy="80" r="70" fill="url(#iconBg1)" stroke="#7DE2D1" stroke-width="3" />
+  
+  <!-- Leaderboard Base -->
+  <rect x="35" y="40" width="90" height="80" rx="4" fill="#2D2A55" stroke="#F1F1F1" stroke-width="2" />
+  
+  <!-- 1st Place Podium -->
+  <g>
+    <!-- Bar -->
+    <rect x="68" y="55" width="24" height="40" rx="2" fill="#63D2FF" />
+    <!-- Position Number -->
+    <circle cx="80" cy="65" r="8" fill="#2D2A55" />
+    <text x="80" y="68" font-family="Arial, sans-serif" font-size="10" fill="#F1F1F1" text-anchor="middle">1</text>
+    <!-- Star -->
+    <path d="M80,80 L82,84 L87,85 L83.5,88 L84,93 L80,91 L76,93 L76.5,88 L73,85 L78,84 Z" fill="#FFEC8B"/>
+  </g>
+  
+  <!-- 2nd Place Podium -->
+  <g>
+    <!-- Bar -->
+    <rect x="40" y="65" width="24" height="30" rx="2" fill="#FF5DA2" />
+    <!-- Position Number -->
+    <circle cx="52" cy="75" r="8" fill="#2D2A55" />
+    <text x="52" y="78" font-family="Arial, sans-serif" font-size="10" fill="#F1F1F1" text-anchor="middle">2</text>
+  </g>
+  
+  <!-- 3rd Place Podium -->
+  <g>
+    <!-- Bar -->
+    <rect x="96" y="75" width="24" height="20" rx="2" fill="#F1F1F1" />
+    <!-- Position Number -->
+    <circle cx="108" cy="85" r="8" fill="#2D2A55" />
+    <text x="108" y="88" font-family="Arial, sans-serif" font-size="10" fill="#F1F1F1" text-anchor="middle">3</text>
+  </g>
+  
+  <!-- Divider Lines -->
+  <g>
+    <line x1="45" y1="112" x2="115" y2="112" stroke="#A084DC" stroke-width="1" opacity="0.7" />
+    <line x1="45" y1="105" x2="115" y2="105" stroke="#A084DC" stroke-width="0.5" opacity="0.7" />
+  </g>
+</svg>
