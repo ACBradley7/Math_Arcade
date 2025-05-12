@@ -48,26 +48,35 @@ h1 {
 }
 
 .gameCard:hover {
-    opacity: 90%;
-}
-
-.gameCard:active {
-    opacity: 100%;
+    opacity: 70%;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .gameCardTitle {
-    flex-grow: 1;
-    align-content: center;
+    height: 80%;
+    align-items: center;
 }
 
-.gameCardPlaceholder {
-    flex-grow: 3;
-    align-content: center;
+.gameCardPlayButtonDiv {
+    height: 20%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
 }
 
 .gameCardPlayButton {
-    flex-grow: 1;
-    align-content: center;
+    width: auto;
+}
+
+.gameCardPlayButton:hover {
+    opacity: 85%;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.gameCardPlayButton:active {
+    opacity: 100%;
 }
 
 #main {
@@ -92,7 +101,7 @@ h1 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 90vh;
-    background-image: linear-gradient(to top, #7D3CF8, #2D2A55);
+    background-image: linear-gradient(to top, #7D3CF8, #2D2A55 40%);
 }
 
 #featuredHeader {
@@ -106,11 +115,11 @@ h1 {
 }
 
 #leaderboard {
-
+    width: auto;
 }
 
 #progress {
-
+    width: auto;
 }
 
 #progRewards {
