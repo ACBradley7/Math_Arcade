@@ -5,3 +5,122 @@ body {
     overflow-x: hidden;
     background-color: #2D2A55;
 }
+
+div {
+    margin: 0;
+    padding: 2vh;
+    height: 20vh;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #F2F2F2;
+}
+
+.pink {
+    background-color: palevioletred;
+}
+
+.green {
+    background-color: green;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.gameCard {
+    height: 60vh;
+    width: 20vw;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3vw solid #00E4FF;
+    border-radius: 10%;
+    background-image: linear-gradient(to top, #0E0220, #1A1A40);
+    opacity: 60%;
+}
+
+.gameCard:hover {
+    opacity: 90%;
+}
+
+.gameCard:active {
+    opacity: 100%;
+}
+
+.gameCardTitle {
+    flex-grow: 1;
+    align-content: center;
+}
+
+.gameCardPlaceholder {
+    flex-grow: 3;
+    align-content: center;
+}
+
+.gameCardPlayButton {
+    flex-grow: 1;
+    align-content: center;
+}
+
+#main {
+    height: 80vh;
+}
+
+#navBar {
+    height: 10vh;
+}
+
+#logoBar {
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+#navOptions {
+    flex-grow: 2;
+    justify-content: space-evenly;
+}
+
+#featured {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 90vh;
+    background-image: linear-gradient(to top, #7D3CF8, #2D2A55);
+}
+
+#featuredHeader {
+    flex-basis: 100vw;
+    height: 5vh;
+}
+
+#featuredHeaderText {
+    position: relative;
+    left: 20vw;
+}
+
+#leaderboard {
+
+}
+
+#progress {
+
+}
+
+#progRewards {
+    flex-grow: 1.5;
+}
+
+#progBars {
+    flex-grow: 1;
+}
+
+#footer {
+    height: 10vh;
+}

@@ -1,12 +1,82 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Math Arcade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="homeSheet.css">
     <script src="homeScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
 </head>
 <body>
-    <div>
-        <img src="Icons\podium.svg" alt="Calculator" width="60" height="60">
+    <div class="centered gray" id="navBar">
+        <div class="centered" id="logoBar">
+            <div class="centered">
+                <h1>Img</h1>
+            </div>
+            <div class="centered">
+                <h1>Name</h1>
+            </div>
+        </div>
+        <div class="centered" id="navOptions">
+            <div class="centered">
+                <h1>Home</h1>
+            </div>
+            <div class="centered">
+                <h1>Play</h1>
+            </div>
+            <div class="centered">
+                <h1>Account</h1>
+            </div>
+            <div class="centered">
+                <h1>Catalog</h1>
+            </div>
+            <div class="centered">
+                <h1>About</h1>
+            </div>
+        </div>
+    </div>
+    <div class="centered pink" id="main">
+        <h1>Main</h1>
+    </div>
+    <div class="centered" id="featured">
+        <div id="featuredHeader">
+            <h1 id="featuredHeaderText">Featured Games</h1>
+        </div>
+        <div class="gameCard">
+            <h1 class="gameCardTitle">Starfield</h1>
+            <h1 class="gameCardPlaceholder">Game</h1>
+            <h1 class="gameCardPlayButton">Play Now</h1>
+        </div>
+        <div class="gameCard">
+            <h1 class="gameCardTitle">Card</h1>
+            <h1 class="gameCardPlaceholder">Game</h1>
+            <h1 class="gameCardPlayButton">Play Now</h1>
+        </div>
+        <div class="gameCard">
+            <h1 class="gameCardTitle">Card</h1>
+            <h1 class="gameCardPlaceholder">Game</h1>
+            <h1 class="gameCardPlayButton">Play Now</h1>
+        </div>
+        <div class="gameCard">
+            <h1 class="gameCardTitle">Card</h1>
+            <h1 class="gameCardPlaceholder">Game</h1>
+            <h1 class="gameCardPlayButton">Play Now</h1>
+        </div>
+    </div>
+    <div class="centered green" id="leaderboard">
+        <h1>Leaderboard</h1>
+    </div>
+    <div class="centered pink" id="progress">
+        <div class="centered" id="progRewards">
+            <h1>Rewards</h1>
+        </div>
+        <div class="centered" id="progBars">
+            <h1>Progress</h1>
+        </div>
+    </div>
+    <div class="centered gray" id="footer">
+        <h1>Footer</h1>
     </div>
 </body>
+</html>
