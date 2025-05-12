@@ -9,8 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
 </head>
 <body>
-    <div class="centered gray" id="navBar">
-        <div class="centered" id="logoBar">
+    <div class="centered gray flexContainer" id="navBar">
+        <div class="centered flexContainer" id="logoBar">
             <div class="centered">
                 <h1>Img</h1>
             </div>
@@ -18,7 +18,7 @@
                 <h1>Name</h1>
             </div>
         </div>
-        <div class="centered" id="navOptions">
+        <div class="centered flexContainer" id="navOptions">
             <div class="centered">
                 <h1>Home</h1>
             </div>
@@ -36,50 +36,48 @@
             </div>
         </div>
     </div>
-    <div class="centered pink" id="main">
+    <div class="centered pink flexContainer" id="main">
         <h1>Main</h1>
     </div>
-    <div class="centered" id="featured">
-        <div id="featuredHeader">
+    <div class="centered flexContainer" id="featured">
+        <div class="centered flexContainer" id="featuredHeader">
             <h1 id="featuredHeaderText">Featured Games</h1>
         </div>
-        <div class="gameCard">
-            <div class="gameCardTitle"><h1>Starfield</h1></div>
-            <div class="gameCardPlayButtonDiv">
-                <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+        <div class="centered flexContainer" id="cardCarousel">
+            <img src="Icons\carouselArrowLeft.svg" class="carouselArrows">
+            <div class="gameCard centered flexContainer">
+                <div class="gameCardTitle"><h1>Starfield</h1></div>
+                <div class="gameCardPlayButtonDiv">
+                    <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+                </div>
             </div>
-        </div>
-        <div class="gameCard">
-            <div class="gameCardTitle"><h1>RTS</h1></div>
-            <div class="gameCardPlayButtonDiv">
-                <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+            <div class="gameCard centered flexContainer">
+                <div class="gameCardTitle"><h1>Platformer</h1></div>
+                <div class="gameCardPlayButtonDiv">
+                    <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+                </div>
             </div>
-        </div>
-        <div class="gameCard">
-            <div class="gameCardTitle"><h1>Platformer</h1></div>
-            <div class="gameCardPlayButtonDiv">
-                <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+            <div class="gameCard centered flexContainer">
+                <div class="gameCardTitle"><h1>RTS</h1></div>
+                <div class="gameCardPlayButtonDiv">
+                    <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+                </div>
             </div>
-        </div>
-        <div class="gameCard">
-            <div class="gameCardTitle"><h1>Duel</h1></div>
-            <div class="gameCardPlayButtonDiv">
-                <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
-            </div>
+           <img src="Icons\carouselArrowRight.svg" class="carouselArrows">
         </div>
     </div>
-    <div class="centered green" id="leaderboard">
+    <div class="centered green flexContainer" id="leaderboard">
         <h1>Leaderboard</h1>
     </div>
-    <div class="centered pink" id="progress">
-        <div class="centered" id="progRewards">
+    <div class="centered pink flexContainer" id="progress">
+        <div class="centered flexContainer" id="progRewards">
             <h1>Rewards</h1>
         </div>
-        <div class="centered" id="progBars">
+        <div class="centered flexContainer" id="progBars">
             <h1>Progress</h1>
         </div>
     </div>
-    <div class="centered gray" id="footer">
+    <div class="centered gray flexContainer" id="footer">
         <h1>Footer</h1>
     </div>
 </body>
