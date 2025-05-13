@@ -43,8 +43,8 @@
         <div class="centered flexContainer" id="featuredHeader">
             <h1 id="featuredHeaderText">Featured Games</h1>
         </div>
-        <div class="centered flexContainer" id="cardCarousel">
-            <img src="Icons\carouselArrowLeft.svg" class="carouselArrows">
+        <div class="centered flexContainer" id="cardCarousel" onscroll="cycleCarousel">
+            <img src="Icons\carouselArrowLeft.svg" class="carouselArrows" id="carouselArrowLeft" onclick="cycleLeft()">
             <div class="gameCard centered flexContainer">
                 <div class="gameCardTitle"><h1>Starfield</h1></div>
                 <div class="gameCardPlayButtonDiv">
@@ -63,7 +63,7 @@
                     <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
                 </div>
             </div>
-           <img src="Icons\carouselArrowRight.svg" class="carouselArrows">
+           <img src="Icons\carouselArrowRight.svg" class="carouselArrows" id="carouselArrowRight" onclick="cycleRight()">
         </div>
     </div>
     <div class="centered green flexContainer" id="leaderboard">

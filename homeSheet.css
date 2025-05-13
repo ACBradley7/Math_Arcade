@@ -42,8 +42,7 @@ h1 {
 .carouselArrows {
     width: 5vw;
     height: 15vh;
-    transition: 1s ease-in;
-    opacity: 0%;
+    opacity: 30%;
 }
 
 .carouselArrows:hover {
@@ -84,8 +83,12 @@ h1 {
 }
 
 .gameCardPlayButton:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: all 0.3s ease;
+}
+
+.gameCardPlayButton:active {
+    transform: scale(1);
 }
 
 #main {
@@ -120,6 +123,7 @@ h1 {
 #featuredHeaderText {
     position: relative;
     left: -20vw;
+    font-size: 5vw;
 }
 
 #cardCarousel {
@@ -129,7 +133,17 @@ h1 {
 }
 
 #cardCarousel:hover .carouselArrows {
-    opacity: 100%;
+    opacity: 70%;
+}
+
+#carouselArrowLeft:active {
+    transform: scale(0.8);
+    transition: all 0.1s;
+}
+
+#carouselArrowRight:active {
+    transform: scale(0.8);
+    transition: all 0.1s;
 }
 
 #leaderboard {
