@@ -44,24 +44,36 @@
             <h1 id="featuredHeaderText">Featured Games</h1>
         </div>
         <div class="centered flexContainer" id="cardCarousel" onscroll="cycleCarousel">
+            <div class="centered flexContainer" id="leftOffScreenCardHolder">
+
+            </div>
             <img src="Icons\carouselArrowLeft.svg" class="carouselArrows" id="carouselArrowLeft" onclick="cycleLeft()">
-            <div class="gameCard centered flexContainer">
-                <div class="gameCardTitle"><h1>Starfield</h1></div>
-                <div class="gameCardPlayButtonDiv">
-                    <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+            <div class="centered flexContainer gameCardHolder" id="gameCardHolderOne">
+                <div class="gameCard centered flexContainer">
+                    <div class="gameCardTitle"><h1>Starfield</h1></div>
+                    <div class="gameCardPlayButtonDiv">
+                        <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+                    </div>
                 </div>
             </div>
-            <div class="gameCard centered flexContainer">
-                <div class="gameCardTitle"><h1>Platformer</h1></div>
-                <div class="gameCardPlayButtonDiv">
-                    <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+            <div class="centered flexContainer gameCardHolder" id="gameCardHolderTwo">
+                <div class="gameCard centered flexContainer">
+                    <div class="gameCardTitle"><h1>Platformer</h1></div>
+                    <div class="gameCardPlayButtonDiv">
+                        <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+                    </div>
                 </div>
             </div>
-            <div class="gameCard centered flexContainer">
-                <div class="gameCardTitle"><h1>RTS</h1></div>
-                <div class="gameCardPlayButtonDiv">
-                    <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+            <div class="centered flexContainer gameCardHolder" id="gameCardHolderThree">
+                <div class="gameCard centered flexContainer">
+                    <div class="gameCardTitle"><h1>RTS</h1></div>
+                    <div class="gameCardPlayButtonDiv">
+                        <img src="Icons\gameCardPlayButton.svg" class="gameCardPlayButton">
+                    </div>
                 </div>
+            </div>
+            <div class="centered flexContainer" id="rightOffScreenCardHolder">
+
             </div>
            <img src="Icons\carouselArrowRight.svg" class="carouselArrows" id="carouselArrowRight" onclick="cycleRight()">
         </div>

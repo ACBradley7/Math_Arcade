@@ -43,6 +43,11 @@ function cycleCarousel() {
 
 function cycleRight() {
     gameCardHead = gameCardHead.next;
+
+    containerOne = document.getElementById("gameCardHolderOne");
+    containerTwo = document.getElementById("gameCardHolderTwo");
+
+    containerTwo.appendChild(containerOne.firstElementChild);
 }
 
 function cycleLeft() {

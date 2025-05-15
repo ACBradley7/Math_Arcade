@@ -49,9 +49,14 @@ h1 {
     cursor: pointer;
 }
 
-.gameCard {
+.gameCardHolder {
     height: 60vh;
     width: 20vw;
+}
+
+.gameCard {
+    height: inherit;
+    width: inherit;
     flex-direction: column;
     border: 0.3vw solid #00E4FF;
     border-radius: 10%;
@@ -134,6 +139,16 @@ h1 {
 
 #cardCarousel:hover .carouselArrows {
     opacity: 70%;
+}
+
+#leftOffScreenCardHolder {
+    position: absolute;
+    transform: translateX(-100vw);
+}
+
+#rightOffScreenCardHolder {
+    position: absolute;
+    transform: translateY(100vw);
 }
 
 #carouselArrowLeft:active {
