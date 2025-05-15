@@ -1,4 +1,5 @@
 let gameCardHead;
+let gameCards;
 
 class gameCard {
     constructor(element, next=null, prev=null) {
@@ -8,10 +9,47 @@ class gameCard {
     }
 }
 
+window.onload = function gameCardInitInfo() {
+    // Replace with txt file eventually
+    let gameCards = [
+        {   name: "Placeholder",
+            container: "offScreenGameCardHolder",
+            new: false,
+            url: null,
+            img: null
+        },
+        {
+            name: "Starfield",
+            container: "gameCardHolderOne",
+            new: false,
+            url: null,
+            img: null
+        },
+        {
+            name: "RTS",
+            container: "gameCardHolderTwo",
+            new: false,
+            url: null,
+            img: null
+        },
+        {
+            name: "Platformer",
+            container: "gameCardHolderThree",
+            new: false,
+            url: null,
+            img: null
+        }
+    ]
+}
+
 window.onload = function getGameCards() {
     let gameCards = document.getElementsByClassName("gameCard");
     gameCardHead = createLinkedList(gameCards);
 };
+
+function createGameCardHTML(cardInfo) {
+
+}
 
 function createLinkedList(arr) {
     let node;
@@ -46,10 +84,37 @@ function cycleRight() {
 
     containerOne = document.getElementById("gameCardHolderOne");
     containerTwo = document.getElementById("gameCardHolderTwo");
+    containerThree = document.getElementById("gameCardHolderThree");
+    containerOffScreen = document.getElementById("offScreenGameCardHolder")
 
-    containerTwo.appendChild(containerOne.firstElementChild);
+    nextGameCard = gameCardHead;
+    gameCardOne = containerOne.firstElementChild;
+    gameCardTwo = containerTwo.firstElementChild;
+    gameCardThree = containerThree.firstElementChild;
+
+    //gameCardOne.classList.add("gameCardMove");
+    //gameCardOne.classList.remove("gameCardMove");
+    //containerOne.appendChild(nextGameCard);
+
+    containerTwo.appendChild(gameCardOne);
+    containerThree.appendChild(gameCardTwo);
+    containerOffScreen.appendChild(gameCardThree);
 }
 
 function cycleLeft() {
     gameCardHead = gameCardHead.prev;
+
+    containerOne = document.getElementById("gameCardHolderOne");
+    containerTwo = document.getElementById("gameCardHolderTwo");
+    containerThree = document.getElementById("gameCardHolderThree");
+    containerOffScreen = document.getElementById("offScreenGameCardHolder")
+
+    nextGameCard = gameCardHead;
+    gameCardOne = containerOne.firstElementChild;
+    gameCardTwo = containerTwo.firstElementChild;
+    gameCardThree = containerThree.firstElementChild;
+
+    containerOffScreen.appendChild(gameCardOne);
+    containerOne.appendChild(gameCardTwo);
+    containerTwo.appendChild(gameCardThree);
 }

@@ -76,6 +76,11 @@ h1 {
     transform: scale(1.00);
 }
 
+.gameCardMove {
+    opacity: 0%;
+    transition: all 2s linear;
+}
+
 .gameCardTitle {
     position: relative;
     top: 20%;
@@ -141,14 +146,9 @@ h1 {
     opacity: 70%;
 }
 
-#leftOffScreenCardHolder {
+#offScreenGameCardHolder {
     position: absolute;
     transform: translateX(-100vw);
-}
-
-#rightOffScreenCardHolder {
-    position: absolute;
-    transform: translateY(100vw);
 }
 
 #carouselArrowLeft:active {
