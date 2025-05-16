@@ -148,7 +148,7 @@ h1 {
 
 #offScreenGameCardHolder {
     position: absolute;
-    transform: translateX(-100vw);
+    transform: translateX(100vw);
 }
 
 #carouselArrowLeft:active {
