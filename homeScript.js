@@ -118,7 +118,7 @@ function cycleLeft() {
     setTimeout(() => {
         carousel.classList.toggle("gameCardFadeIn");
         carouselCycling = false;
-    }, 300);
+    }, 600);
 
     lastGameCard = gameCards.pop();
     gameCards.splice(0, 0, lastGameCard);
@@ -157,7 +157,7 @@ function cycleRight() {
     setTimeout(() => {
         carousel.classList.toggle("gameCardFadeIn");
         carouselCycling = false;
-    }, 300);    
+    }, 600);    
 
     firstGameCard = gameCards.shift();
     gameCards.push(firstGameCard);

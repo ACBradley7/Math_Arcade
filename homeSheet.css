@@ -92,7 +92,7 @@ h1 {
 
 .gameCardFadeIn {
     opacity: 100%;
-    transition: 0.3s;
+    transition: 0.6s;
 }
 
 .gameCardTitle {
