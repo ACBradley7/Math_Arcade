@@ -17,6 +17,15 @@ h1 {
     color: #F2F2F2;
 }
 
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+}
+
+.fullWidth {
+    width: 100vw;
+}
+
 .flexContainer {
     display: flex;
 }
@@ -68,7 +77,7 @@ h1 {
     cursor: pointer;
     opacity: 80%;
     transform: scale(1.05);
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .gameCard:active {
@@ -76,9 +85,14 @@ h1 {
     transform: scale(1.00);
 }
 
-.gameCardMove {
+.gameCardFadeOut {
     opacity: 0%;
-    transition: all 2s linear;
+    transition: 0.3s;
+}
+
+.gameCardFadeIn {
+    opacity: 100%;
+    transition: 0.3s;
 }
 
 .gameCardTitle {
@@ -92,18 +106,18 @@ h1 {
     width: 80%;
 }
 
-.gameCardPlayButton:hover {
+.playButton:hover {
+    opacity: 70%;
+    cursor: pointer;
     transform: scale(1.1);
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
-.gameCardPlayButton:active {
+.playButton:active {
+    opacity: 80%;
     transform: scale(1);
 }
 
-#main {
-    height: 80vh;
-}
 
 #navBar {
     height: 10vh;
@@ -117,6 +131,57 @@ h1 {
 #navOptions {
     flex-grow: 2;
     justify-content: space-evenly;
+}
+
+#main {
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(to top, #2D2A55 , #1A1A40);
+}
+
+#mainHeader {
+    position: absolute;
+    width: 50vw;
+    left: 5vw;
+    top: 10vh;
+}
+
+#mainHeaderText {
+    font-size: 7em;
+    color: #30D5C8;
+    text-shadow: 0 0 0.4em #F2F2F2;
+}
+
+#mainSubHeader {
+    position: absolute;
+    width: 50vw;
+    top: 50vh;
+    left: 10vw;
+}
+
+#mainSubHeaderText {
+    font-size: 3em;
+    color: #DF73FF;
+}
+
+#mainPlayButtonDiv {
+    width: 30vw;
+    position: absolute;
+    top: 70vh;
+    left: 15vw;
+}
+
+#wizardDiv {
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 60vw;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
+}
+
+#wizardImg {
+    height: 90vh;
+    width: 30vw;
 }
 
 #featured {
@@ -146,6 +211,12 @@ h1 {
     opacity: 70%;
 }
 
+#gameCardContainersWrapper {
+    height: auto;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
 #offScreenGameCardHolder {
     position: absolute;
     transform: translateX(100vw);
@@ -153,12 +224,12 @@ h1 {
 
 #carouselArrowLeft:active {
     transform: scale(0.8);
-    transition: all 0.1s;
+    transition: 0.1s;
 }
 
 #carouselArrowRight:active {
     transform: scale(0.8);
-    transition: all 0.1s;
+    transition: 0.1s;
 }
 
 #leaderboard {

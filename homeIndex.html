@@ -8,6 +8,7 @@
     <script src="homeScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
 </head>
+
 <body>
     <div class="centered gray flexContainer" id="navBar">
         <div class="centered flexContainer" id="logoBar">
@@ -36,43 +37,31 @@
             </div>
         </div>
     </div>
-    <div class="centered pink flexContainer" id="main">
-        <h1>Main</h1>
+    <div class="centered flexContainer" id="main">
+        <div class="centered" id="mainHeader"><h1 id="mainHeaderText">Become a math wizard, today!</h1></div>
+        <div class="centered" id="mainSubHeader"><h1 id="mainSubHeaderText">Play games, master skills, level up, and unlock rewards!</h1></div>
+        <div class="centered" id="wizardDiv"><img src="Images/mathArcadeWizard.png" id="wizardImg"></div>
+        <div class="centered" id="mainPlayButtonDiv"><img src="Icons/mainPlayButton.svg" class="playButton"></div>
     </div>
+    <div><img class="fullWidth" src="Icons/wavyBorderOne.svg"></div>
     <div class="centered flexContainer" id="featured">
-        <div class="centered flexContainer" id="featuredHeader">
-            <h1 id="featuredHeaderText">Featured Games</h1>
-        </div>
-        <div class="centered flexContainer" id="cardCarousel" onscroll="cycleCarousel">
+        <div class="centered flexContainer" id="featuredHeader"><h1 id="featuredHeaderText" class="underline">Featured Games</h1></div>
+        <div class="centered flexContainer" id="cardCarousel">
             <img src="Icons\carouselArrowLeft.svg" class="carouselArrows" id="carouselArrowLeft" onclick="cycleLeft()">
-            <div class="centered flexContainer gameCardHolder" id="gameCardHolderOne">
-                <!-- gameCard created on pageload via JS -->
+            <div class="centered flexContainer" id="gameCardContainersWrapper"><!--<onscroll="cycleCarousel()"-->
+                <div class="centered flexContainer gameCardHolder" id="gameCardHolderOne"><!-- gameCard created on pageload via JS --></div>
+                <div class="centered flexContainer gameCardHolder" id="gameCardHolderTwo"><!-- gameCard created on pageload via JS --></div>
+                <div class="centered flexContainer gameCardHolder" id="gameCardHolderThree"><!-- gameCard created on pageload via JS --></div>
             </div>
-            <div class="centered flexContainer gameCardHolder" id="gameCardHolderTwo">
-                <!-- gameCard created on pageload via JS -->
-            </div>
-            <div class="centered flexContainer gameCardHolder" id="gameCardHolderThree">
-                <!-- gameCard created on pageload via JS -->
-            </div>
-            <div class="centered flexContainer" id="offScreenGameCardHolder">
-                <!-- gameCard created on pageload via JS -->
-            </div>
+            <div class="centered flexContainer" id="offScreenGameCardHolder"><!-- gameCard created on pageload via JS --></div>
             <img src="Icons\carouselArrowRight.svg" class="carouselArrows" id="carouselArrowRight" onclick="cycleRight()">
         </div>
     </div>
-    <div class="centered green flexContainer" id="leaderboard">
-        <h1>Leaderboard</h1>
-    </div>
+    <div class="centered green flexContainer" id="leaderboard"><h1>Leaderboard</h1></div>
     <div class="centered pink flexContainer" id="progress">
-        <div class="centered flexContainer" id="progRewards">
-            <h1>Rewards</h1>
-        </div>
-        <div class="centered flexContainer" id="progBars">
-            <h1>Progress</h1>
-        </div>
+        <div class="centered flexContainer" id="progRewards"><h1>Rewards</h1></div>
+        <div class="centered flexContainer" id="progBars"><h1>Progress</h1></div>
     </div>
-    <div class="centered gray flexContainer" id="footer">
-        <h1>Footer</h1>
-    </div>
+    <div class="centered gray flexContainer" id="footer"><h1>Footer</h1></div>
 </body>
 </html>

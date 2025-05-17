@@ -1,22 +1,9 @@
 let gameCards;
-
-// class gameCard {
-//     constructor(element, next=null, prev=null) {
-//         this.element = element;
-//         this.next = next;
-//         this.prev = prev;
-//     }
-// }
+let carouselCycling = false;
 
 window.onload = function onPageLoad() {
     gameCardInitInfo();
     createGameCardsHTML();
-}
-
-function createGameCardsHTML() {
-    for (let i = 0; i < gameCards.length; i++) {
-        createGameCardHTML(gameCards[i]);
-    }
 }
 
 function gameCardInitInfo() {
@@ -43,26 +30,32 @@ function gameCardInitInfo() {
             url: null,
             img: null
         },
-        {   GameID: "Placeholder",
+        {   GameID: "Duel",
             containerID: "offScreenGameCardHolder",
             new: false,
             url: null,
             img: null
         },
         {
-            GameID: "4",
+            GameID: "Placeholder1",
             containerID: "offScreenGameCardHolder",
             new: false,
             url: null,
             img: null
         },
-        {   GameID: "5",
+        {   GameID: "Placeholder2",
             containerID: "offScreenGameCardHolder",
             new: false,
             url: null,
             img: null
         }
     ]
+}
+
+function createGameCardsHTML() {
+    for (let i = 0; i < gameCards.length; i++) {
+        createGameCardHTML(gameCards[i]);
+    }
 }
 
 function createGameCardHTML(cardInfo) {
@@ -78,7 +71,7 @@ function createGameCardHTML(cardInfo) {
     gameCardDiv.id = `${cardInfo.GameID}`;
     gameCardTitleDiv.classList.add("gameCardTitle");
     gameCardPlayButtonDiv.classList.add("gameCardPlayButtonDiv");
-    gameCardPlayButton.classList.add("gameCardPlayButton");
+    gameCardPlayButton.classList.add("playButton");
     gameCardPlayButton.src = "Icons\\gameCardPlayButton.svg";
 
     gameCardPlayButtonDiv.appendChild(gameCardPlayButton);
@@ -89,35 +82,16 @@ function createGameCardHTML(cardInfo) {
     gameCardContainerDiv.appendChild(gameCardDiv);
 }
 
-// function createLinkedList(arr) {
-//     let node;
-//     let prevNode;
+// function cycleCarousel(event) {
 
-//     // Convert array into linked list
-//     for (let i = 0; i < arr.length; i++) {
-//         if (prevNode) {
-//             node = new gameCard(arr[i]);
-//             prevNode.next = node;
-//             node.prev = prevNode;
-//         } else {
-//             node = new gameCard(arr[i]);
-//             head = node
-//         }
-//         prevNode = node;
-//     }
-
-//     // Make Circular
-//     node.next = head;
-//     head.prev = node;
-
-//     return head;
 // }
 
-function cycleCarousel() {
+function cycleLeft() {
+    if (carouselCycling) return;
+    carouselCycling = true;
 
-}
+    carousel = document.getElementById("gameCardContainersWrapper");
 
-function cycleRight() {
     containerOne = document.getElementById("gameCardHolderOne");
     containerTwo = document.getElementById("gameCardHolderTwo");
     containerThree = document.getElementById("gameCardHolderThree");
@@ -127,17 +101,36 @@ function cycleRight() {
     gameCardOne = document.getElementById(gameCards[0].GameID);
     gameCardTwo = document.getElementById(gameCards[1].GameID);
     gameCardThree = document.getElementById(gameCards[2].GameID);
-        
-    containerOne.appendChild(newGameCard);
-    containerTwo.appendChild(gameCardOne);
-    containerThree.appendChild(gameCardTwo);
-    containerOffScreen.appendChild(gameCardThree);
+
+    carousel.classList.toggle("gameCardFadeOut");
+
+    setTimeout(() => {
+        carousel.classList.toggle("gameCardFadeOut");
+        carousel.classList.toggle("gameCardFadeIn");
+
+        // move DOM elements here
+        containerOffScreen.appendChild(gameCardThree);
+        containerThree.appendChild(gameCardTwo);
+        containerTwo.appendChild(gameCardOne);
+        containerOne.appendChild(newGameCard);
+    }, 300);
     
+    setTimeout(() => {
+        carousel.classList.toggle("gameCardFadeIn");
+        carouselCycling = false;
+    }, 300);
+
     lastGameCard = gameCards.pop();
     gameCards.splice(0, 0, lastGameCard);
 }
 
-function cycleLeft() {
+
+function cycleRight() {
+    if (carouselCycling) return;
+    carouselCycling = true;
+
+    carousel = document.getElementById("gameCardContainersWrapper");
+
     containerOne = document.getElementById("gameCardHolderOne");
     containerTwo = document.getElementById("gameCardHolderTwo");
     containerThree = document.getElementById("gameCardHolderThree");
@@ -147,12 +140,25 @@ function cycleLeft() {
     gameCardOne = document.getElementById(gameCards[0].GameID);
     gameCardTwo = document.getElementById(gameCards[1].GameID);
     gameCardThree = document.getElementById(gameCards[2].GameID);
+
+    carousel.classList.toggle("gameCardFadeOut");
+
+    setTimeout(() => {
+        carousel.classList.toggle("gameCardFadeOut");
+        carousel.classList.toggle("gameCardFadeIn");
+
+        // move DOM elements here
+        containerOffScreen.appendChild(gameCardOne);
+        containerOne.appendChild(gameCardTwo);
+        containerTwo.appendChild(gameCardThree);
+        containerThree.appendChild(newGameCard);
+    }, 300);
     
-    containerOffScreen.appendChild(gameCardOne);
-    containerOne.appendChild(gameCardTwo);
-    containerTwo.appendChild(gameCardThree);
-    containerThree.appendChild(newGameCard);
-    
+    setTimeout(() => {
+        carousel.classList.toggle("gameCardFadeIn");
+        carouselCycling = false;
+    }, 300);    
+
     firstGameCard = gameCards.shift();
     gameCards.push(firstGameCard);
 }
