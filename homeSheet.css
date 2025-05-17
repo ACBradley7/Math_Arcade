@@ -19,7 +19,7 @@ h1 {
 
 .underline {
     text-decoration: underline;
-    text-decoration-thickness: 0.05em;
+    text-decoration-thickness: 0.25vw;
 }
 
 .fullWidth {
@@ -147,28 +147,28 @@ h1 {
 }
 
 #mainHeaderText {
-    font-size: 7em;
+    font-size: 7vw;
     color: #30D5C8;
-    text-shadow: 0 0 0.4em #F2F2F2;
+    text-shadow: 0 0 2vw #F2F2F2;
 }
 
 #mainSubHeader {
     position: absolute;
     width: 50vw;
-    top: 50vh;
     left: 10vw;
+    top: 50vh;
 }
 
 #mainSubHeaderText {
-    font-size: 3em;
+    font-size: 3.5vw;
     color: #DF73FF;
 }
 
 #mainPlayButtonDiv {
-    width: 30vw;
     position: absolute;
-    top: 70vh;
+    width: 30vw;
     left: 15vw;
+    top: 70vh;
 }
 
 #wizardDiv {
