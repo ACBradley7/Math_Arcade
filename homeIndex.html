@@ -11,37 +11,23 @@
 
 <body>
     <div class="centered gray flexContainer" id="navBar">
-        <div class="centered flexContainer" id="logoBar">
-            <div class="centered">
-                <h1>Img</h1>
-            </div>
-            <div class="centered">
-                <h1>Name</h1>
-            </div>
+        <div id="logoFireBallDiv"><img src="Icons/fireOrb.svg" id="logoFireBall"></div>
+        <div class="centered autoHeight flexContainer" id="logoBar">
+            <div class="centered autoHeight"><h1 class="navOptionContents"><a href="homeIndex.html">Numeria: Magical Math Academy</a></h1></div>
         </div>
-        <div class="centered flexContainer" id="navOptions">
-            <div class="centered">
-                <h1>Home</h1>
-            </div>
-            <div class="centered">
-                <h1>Play</h1>
-            </div>
-            <div class="centered">
-                <h1>Account</h1>
-            </div>
-            <div class="centered">
-                <h1>Catalog</h1>
-            </div>
-            <div class="centered">
-                <h1>About</h1>
-            </div>
+        <div class="centered autoHeight flexContainer" id="navOptions">
+            <div class="centered autoHeight"><h1 class="navOptionContents">Play</h1></div>
+            <div class="centered autoHeight"><h1 class="navOptionContents">Catalog</h1></div>
+            <div class="centered autoHeight"><h1 class="navOptionContents">About</h1></div>
         </div>
     </div>
-    <div class="centered flexContainer" id="main">
-        <div class="centered" id="mainHeader"><h1 id="mainHeaderText">Become a math wizard, today!</h1></div>
-        <div class="centered" id="mainSubHeader"><h1 id="mainSubHeaderText">Play games, master skills, level up, and unlock rewards!</h1></div>
+    <div class="flexContainer" id="main">
+        <div class="centered flexContainer" id="mainLeftColumn">
+            <div class="centered" id="mainHeader"><h1 id="mainHeaderText">Become a math magician, today!</h1></div>
+            <div class="centered" id="mainSubHeader"><h1 id="mainSubHeaderText">Play games, master skills, level up, and unlock rewards...</h1></div>
+            <div class="centered" id="mainPlayButtonDiv"><img src="Icons/mainPlayButton.svg" class="playButton"></div>
+        </div>
         <div class="centered" id="wizardDiv"><img src="Images/mathArcadeWizard.png" id="wizardImg"></div>
-        <div class="centered" id="mainPlayButtonDiv"><img src="Icons/mainPlayButton.svg" class="playButton"></div>
     </div>
     <div><img class="fullWidth" src="Icons/wavyBorderOne.svg"></div>
     <div class="centered flexContainer" id="featured">
@@ -57,7 +43,9 @@
             <img src="Icons\carouselArrowRight.svg" class="carouselArrows" id="carouselArrowRight" onclick="cycleRight()">
         </div>
     </div>
-    <div class="centered green flexContainer" id="leaderboard"><h1>Leaderboard</h1></div>
+    <div class="centered green flexContainer" id="leaderboard">
+        <div class="centered" id="leaderboardScrollDiv"><img src="Icons/leaderboardScroll.svg"></div>
+    </div>
     <div class="centered pink flexContainer" id="progress">
         <div class="centered flexContainer" id="progRewards"><h1>Rewards</h1></div>
         <div class="centered flexContainer" id="progBars"><h1>Progress</h1></div>

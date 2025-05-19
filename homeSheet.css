@@ -17,13 +17,22 @@ h1 {
     color: #F2F2F2;
 }
 
-.underline {
-    text-decoration: underline;
-    text-decoration-thickness: 0.25vw;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .fullWidth {
     width: 100vw;
+}
+
+.autoHeight {
+    height: auto;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 0.25vw;
 }
 
 .flexContainer {
@@ -46,6 +55,30 @@ h1 {
 
 .gray {
     background-color: gray;
+}
+
+.navOptionContents:hover {
+    cursor: pointer;
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.navOptionContents:active {
+    opacity: 80%;
+    transform: scale(1);
+}
+
+.playButton:hover {
+    opacity: 70%;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.playButton:active {
+    opacity: 80%;
+    transform: scale(1);
 }
 
 .carouselArrows {
@@ -106,57 +139,75 @@ h1 {
     width: 80%;
 }
 
-.playButton:hover {
-    opacity: 70%;
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.3s ease;
-}
-
-.playButton:active {
-    opacity: 80%;
-    transform: scale(1);
-}
-
-
 #navBar {
     height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background-image: linear-gradient(to bottom, #00416A, 70%, #1A1A40);
+    border-bottom: solid 0.1vh #F2F2F2;
+    z-index: 1;
+    opacity: 80%;
+}
+
+#navBar:hover {
+    opacity: 95%;
 }
 
 #logoBar {
     flex-grow: 1;
-    justify-content: space-evenly;
+}
+
+#logoFireBallDiv {
+    width: 2vw;
+    height: auto;
+    position: absolute;
+    top: 5vh;
+    left: 30vw;
+    opacity: 0%;
+    animation: logoFireBallAnim 2s;
+}
+
+@keyframes logoFireBallAnim {
+    /* Can I make this more responsive? */
+    0% {opacity: 0%; z-index: -1; top: 45%; left: 30%;}
+    33% {opacity: 100%; z-index: -1; top: 20%; left: 40%;}
+    66% {opacity: 100%; z-index: 1; top: 50%; left: 1%;}
+    100% {opacity: 0%; z-index: -1; top: 20%; left: 30%;}
 }
 
 #navOptions {
-    flex-grow: 2;
+    flex-grow: 4;
     justify-content: space-evenly;
 }
 
 #main {
-    position: relative;
-    height: 90vh;
-    background-image: linear-gradient(to top, #2D2A55 , #1A1A40);
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #1A1A40, #2D2A55);
+}
+
+#mainLeftColumn {
+    width: 60vw;
+    height: auto;
+    flex-direction: column;
 }
 
 #mainHeader {
-    position: absolute;
-    width: 50vw;
-    left: 5vw;
+    position: relative;
     top: 10vh;
+    flex-grow: 3;
+    padding-left: 5vw;
 }
 
 #mainHeaderText {
+    flex-grow: 1;
     font-size: 7vw;
     color: #30D5C8;
     text-shadow: 0 0 2vw #F2F2F2;
 }
 
 #mainSubHeader {
-    position: absolute;
-    width: 50vw;
-    left: 10vw;
-    top: 50vh;
+    flex-grow: 1;
+    padding-left: 10vw;
 }
 
 #mainSubHeaderText {
@@ -165,34 +216,32 @@ h1 {
 }
 
 #mainPlayButtonDiv {
-    position: absolute;
     width: 30vw;
-    left: 15vw;
-    top: 70vh;
 }
 
 #wizardDiv {
-    height: auto;
     width: auto;
+    height: auto;
     position: absolute;
     left: 60vw;
+    top: 10vh;
     mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
 }
 
 #wizardImg {
-    height: 90vh;
     width: 30vw;
+    height: 90vh;
 }
 
 #featured {
     height: 90vh;
     flex-wrap: wrap;
-    background-image: linear-gradient(to top, #7D3CF8, #2D2A55 40%);
+    background-image: linear-gradient(to bottom, #2D2A55, 80%, #7D3CF8);
 }
 
 #featuredHeader {
-    flex-basis: 100%;
     width: 100vw;
+    flex-basis: 100%;
 }
 
 #featuredHeaderText {
@@ -202,18 +251,18 @@ h1 {
 }
 
 #cardCarousel {
-    height: auto;
     width: 100vw;
+    height: auto;
     justify-content: space-evenly;
 }
 
 #cardCarousel:hover .carouselArrows {
-    opacity: 70%;
+    opacity: 80%;
 }
 
 #gameCardContainersWrapper {
-    height: auto;
     width: 80vw;
+    height: auto;
     justify-content: space-evenly;
 }
 
@@ -234,6 +283,12 @@ h1 {
 
 #leaderboard {
     width: auto;
+    height: auto;
+}
+
+#leaderboardScrollDiv {
+    width: 80vw;
+    height: auto;
 }
 
 #progress {
@@ -249,5 +304,5 @@ h1 {
 }
 
 #footer {
-    height: 10vh;
+    height: 30vh;
 }
