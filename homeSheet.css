@@ -164,7 +164,11 @@ a {
     top: 5vh;
     left: 30vw;
     opacity: 0%;
-    animation: logoFireBallAnim 2s;
+    z-index: -1;
+}
+
+#logoBar:hover #logoFireBallDiv {
+    animation: logoFireBallAnim 1s;
 }
 
 @keyframes logoFireBallAnim {
